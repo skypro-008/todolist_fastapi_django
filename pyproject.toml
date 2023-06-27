@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "todolist-fastapi-django"
+version = "0.1.0"
+description = ""
+authors = ["kirillskyeng <kirill.netreba@skyeng.ru>"]
+readme = "README.md"
+packages = [{include = "todolist_fastapi_django"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.98.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+python-multipart = "^0.0.6"
+sqlalchemy = "^2.0.17"
+jinja2 = "^3.1.2"
+django = "^4.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
